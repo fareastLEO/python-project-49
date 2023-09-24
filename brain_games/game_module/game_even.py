@@ -33,6 +33,7 @@ def brain_even():
                 f"'{answer}' is wrong answer ;(. "
                 f"Correct answer was '{even_number()}'."
                 )
+            print(f"Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')
 
