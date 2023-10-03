@@ -1,42 +1,40 @@
 #!/usr/bin/env python3
 
-# This module implements the game "Parity Check"
-# For this module to work, you need to import the "username()" function
-# from the "username.py" module
+# This game is called "Parity Check".
+# The essence of the game is this: the user is shown a random number.
+# And he needs to answer 'yes' if the number is even, or 'no' if it’s odd.
 
-import prompt
+from brain_games.engine import engine_welcome
+
+from brain_games.engine import engine_username
+
+from brain_games.engine import engine_test
+
+from brain_games.engine import engine_greeting
 
 from random import randint
 
 
 def brain_even():
-    i = 0
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-
-    def even_number():
-        if (random_number % 2) == 0:
-            return str('yes')
-        return str('no')
-
+    engine_welcome()
+    username = engine_username()
     print('Answer "yes" if the number is even, otherwise answer "no".')
+    i = 0
+
+    # The logic of how the game works is written here.
+    # As a result, the 'question' and 'answer' variables should be created.
     while i < 3:
-        random_number = randint(1, 100)
-        print(f'Question: {random_number}')
-        answer = prompt.string('Your answer: ')
-        if even_number() == answer.lower():
-            print('Correct!')
+        question = randint(1, 100)
+        if (question % 2) == 0:
+            answer = 'yes'
+        else:
+            answer = 'no'
+        # The end of the game logic.Variables 'username', 'question', 'answer'
+        # are passed to the engine to process the result
+        if engine_test(username, question, answer) is True:
             i += 1
             continue
         else:
-            print(
-                f"'{answer}' is wrong answer ;(. "
-                f"Correct answer was '{even_number()}'."
-                )
-            print(f"Let's try again, {name}!")
             return
-    print(f'Congratulations, {name}!')
 
-
-if __name__ == '__main__':
-    brain_even()
+    engine_greeting(username)
