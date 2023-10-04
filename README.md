@@ -3,11 +3,11 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/5fdc48d9cab8419ef953/maintainability)](https://codeclimate.com/github/fareastLEO/python-project-49/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/5fdc48d9cab8419ef953/test_coverage)](https://codeclimate.com/github/fareastLEO/python-project-49/test_coverage)
 
-## Demonstration of the game "Even"
+### Demonstration of the game "Even"
 [![asciicast](https://asciinema.org/a/TMf4XpRvXa3UT5KNOtqCqyv0t.svg)](https://asciinema.org/a/TMf4XpRvXa3UT5KNOtqCqyv0t)
 
-## Demonstration of the game "Calculator"
+### Demonstration of the game "Calculator"
 [![asciicast](https://asciinema.org/a/1VG08KUChwYtPlLBhxvPNDphE.svg)](https://asciinema.org/a/1VG08KUChwYtPlLBhxvPNDphE)
 
-## Demonstration of the game "Greatest common divisor (gcd)"
+### Demonstration of the game "Greatest common divisor (gcd)"
 [![asciicast](https://asciinema.org/a/XnRHPZWqc04n2Wmn6XaWFAU4h.svg)](https://asciinema.org/a/XnRHPZWqc04n2Wmn6XaWFAU4h)
