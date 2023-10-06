@@ -17,7 +17,7 @@ from brain_games.engine import engine_greeting
 from random import randint
 
 
-def brain_prime():
+def brain_prime():  # noqa: C901
     engine_welcome()
     username = engine_username()
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
