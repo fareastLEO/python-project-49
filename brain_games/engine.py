@@ -19,10 +19,8 @@ def engine_test(username, question, answer):
         print('Correct!')
         return True
     else:
-        print(
-            f"'{user_answer}' is wrong answer ;(. "
-            f"Correct answer was '{answer}'."
-             )
+        print(f"'{user_answer}' is wrong answer ;(. "
+              f"Correct answer was '{answer}'.")
         print(f"Let's try again, {username}!")
         return
 
