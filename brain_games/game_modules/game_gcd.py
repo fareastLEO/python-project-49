@@ -13,10 +13,13 @@ def game_logic():
     a = randint(1, 100)
     b = randint(1, 100)
     game_question = f'{a} {b}'
-    while a != 0 and b != 0:
-        if a > b:
-            a = a % b
-        else:
-            b = b % a
-    game_answer = str(a + b)
+
+    def greatest_common_divisor(a, b):
+        while a != 0 and b != 0:
+            if a > b:
+                a = a % b
+            else:
+                b = b % a
+        return str(a + b)
+    game_answer = greatest_common_divisor(a, b)
     return game_question, game_answer
