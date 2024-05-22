@@ -13,16 +13,17 @@ GAME_TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def game_logic():
     game_question = randint(2, 100)
-    i = 2
-    j = 0
-    while i < game_question:
-        if game_question % i == 0:
-            j += 1
+
+    def prime_number(i=2, j=0):
+        while i < game_question:
+            if game_question % i == 0:
+                j += 1
+                i += 1
+                continue
             i += 1
-            continue
-        i += 1
-    if j == 0:
-        game_answer = 'yes'
-    else:
-        game_answer = 'no'
+        if j == 0:
+            return 'yes'
+        else:
+            return 'no'
+    game_answer = prime_number()
     return game_question, game_answer
